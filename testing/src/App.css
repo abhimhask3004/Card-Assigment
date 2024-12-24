@@ -1,0 +1,130 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, rgba(112, 124, 255, 1) 0%, rgba(250, 129, 232, 1) 100%);
+  box-shadow: 0 5px 20px rgba(250, 129, 232, 0.3);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: start;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 19px;
+  box-shadow: 2px 2px 8px black;
+  width: 90%; 
+  max-width: 500px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.profile-image {
+  width: 100px; 
+  height: 120px;
+  border-radius: 7%;
+  border: 1px solid white;
+  box-shadow: 2px 2px 8px black;
+}
+
+.profile-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+.profile-info strong {
+  color: gold;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 600px) {
+  .profile-container {
+    flex-direction: row; 
+    align-items: flex-start;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 160px; 
+    height: 220px;
+  }
+
+  .profile-info {
+    margin-top: 22px;
+    margin-left: 13px; 
+    text-align: left;
+  }
+
+  .profile-info p {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 500px) {
+  .profile-card {
+    padding: 16px;
+    width: 130px;
+  }
+
+  .profile-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .profile-info p {
+    text-align: start;
+    font-size: 12px;
+  }
+  .profile-info{
+    padding-bottom: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+ .profile-container{
+  width: 270px;
+ }
+
+  .profile-card {
+    width: 150px;
+  }
+  .profile-image {
+    width: 110px;
+    height: 140px;
+  }
+
+  .profile-info p {
+    font-size: 13px;
+    text-align: start;
+  }
+  .profile-info{
+    text-align: start;
+    padding-bottom: 11px;
+    padding-left: 3px;
+
+  }
+}
