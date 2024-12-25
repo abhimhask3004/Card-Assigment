@@ -3,8 +3,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, rgba(112, 124, 255, 1) 0%, rgba(250, 129, 232, 1) 100%);
-  box-shadow: 0 5px 20px rgba(250, 129, 232, 0.3);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -17,7 +15,8 @@ body {
   flex-direction: row; 
   justify-content: start;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(2,0,36);
+  background: linear-gradient(52deg, rgba(2,0,36,1) 0%, rgba(9,121,50,0.9668242296918768) 35%, rgba(0,212,255,1) 100%);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 19px;
